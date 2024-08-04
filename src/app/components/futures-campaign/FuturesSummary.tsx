@@ -1,4 +1,10 @@
+'use client'
+import { useRef } from 'react'
+import useEmblaCarousel from 'embla-carousel-react';
+import Autoplay from 'embla-carousel-autoplay'
+
 export default function FuturesSummary() {
+    const [emblaRef] = useEmblaCarousel({ loop: true }, [Autoplay({playOnInit: true, delay: 3000})])
 
     return (
     <>
@@ -10,18 +16,33 @@ export default function FuturesSummary() {
                 We plan to open this new facility within the next 2-3 years. Your contribution will ensure the Daily Pennsylvanian&apos;s continued success and independence for generations to come.
             </p>
         </div>
-        <div className='futures-banner text-white p-5'>
-            <ul>
-                <li>
-                Improved spaces and equipment
-                </li>
-                <li>
-                Cutting-edge media technology
-                </li>
-                <li>
-                Community hub for independent journalism
-                </li>
-            </ul>
+        <div className='relative w-full flex flex-row mb-20'>
+            <div className='flex-1 futures-banner text-white p-5 mt-20 mb-20 z-5'>
+                <ul>
+                    <li>
+                    Improved spaces and equipment
+                    </li>
+                    <li>
+                    Cutting-edge media technology
+                    </li>
+                    <li>
+                    Community hub for independent journalism
+                    </li>
+                </ul>
+            </div>
+            <div className='embla flex-1 bg-red-500 -ml-10 z-2' ref={emblaRef}>
+                <div className="w-full h-full embla__container">
+                    <div className="w-full h-full embla__slide bg-blue-100">
+
+                    </div>
+                    <div className="w-full h-full embla__slide bg-green-100">
+
+                    </div>
+                    <div className="w-full h-full embla__slide bg-red-100">
+
+                    </div>
+                </div>
+            </div>
         </div>
     </>
     )

@@ -3,6 +3,8 @@ import { TestimonyBanner } from './sections/TestimonyBanner'
 import History from './sections/History';
 import AnnualCampaign from './components/AnnualCampaign';
 import FuturesCampaign from './components/FuturesCampaign';
+import PlanGiving from './components/PlanGiving'
+import BottomBar from './components/BottomBar';
 
 const MainPage: React.FC = () => {
   return (
@@ -12,6 +14,8 @@ const MainPage: React.FC = () => {
       <History/>
       <AnnualCampaign/>
       <FuturesCampaign/>
+      <PlanGiving/>
+      <BottomBar/>
     </div>
   );
 };

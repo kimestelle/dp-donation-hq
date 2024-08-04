@@ -40,7 +40,7 @@ export function TestimonyBanner() {
     <div className='embla' ref={emblaRef}>
             <div className="embla__container">
                 {testimonies.map((testimony, index) => (
-                <div key={index} className="embla__slide p-2 pb-4 mb-1">
+                <div key={index} className="embla__slide embla-small-slide p-2 pb-4 mb-1">
                 <TestimonyBlock 
                 name={testimony.name} 
                 testimony={testimony.testimony} 
