@@ -4,30 +4,159 @@
 
 :root {
   --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --background-rgb: white;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+/* * {
+  border: 1px solid red;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+div {
+  border: 1px solid blue;
+} */
+
+h1 {
+  font-family: "nocturne-serif", serif;
+  font-weight: 800;
+  font-size: 3em;
+}
+
+h2 {
+  font-family: "nocturne-serif", serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 3em;
+}
+
+h3 {
+  font-family: "nocturne-serif", serif;
+  font-weight: 700;
+  font-size: 1.2em;
+}
+
+h5 {
+  font-family: "nocturne-serif", serif;
+  font-weight: 400;
+  font-variant: small-caps;
+  font-size: 1em;
+}
+
+p {
+  font-family: "nocturne-serif", serif;
+  font-weight: 400;
+  font-size: 1em;
+  color: rgb(36, 36, 36);
+}
+
+button {
+  background-color: #aa1e22;
+  width: fit-content;
+  padding: 1em;
+  padding-top: 0.8em;
+  padding-bottom: 0.8em;
+  border-radius: 1em;
+  box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.3);
+
+  font-family: "nocturne-serif", serif;
+  font-weight: 400;
+  font-size: 1em;
+  color: white;
+}
+
+button:active {
+  box-shadow: inset 2px 3px 3px rgba(0, 0, 0, 0.3);
+}
+
+.text-white-outline {
+  text-align: right;
+  -webkit-text-stroke-width: 0.8px;
+  -webkit-text-stroke-color: #FFF;
+  -webkit-text-fill-color: transparent;
+  font-family: "Nocturne Serif";
+  font-size: 4em;
+  font-style: normal;
+  font-weight: 600;
+  font-variant: all-small-caps;
+  color: transparent;
+  padding-left: 0.5em;
+  padding-bottom: 0.23em;
+  padding-top: 0.08em;
+  background-image: url('/svg-assets/chestnut-banner.svg');
+  background-size: cover;
+}
+
+.futures-banner {
+  padding-left: 5em;
+  padding-bottom: 3em;
+  padding-top: 3em;
+  background-image: url('/svg-assets/arrow-banner.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-x: 50%;
+}
+
+.futures-banner li {
+  font-family: "nocturne-serif", serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 2em;
+  line-height: 200%;
+}
+
+.dp-red {
+  color: #aa1e22;
+}
+
+.bg-main-scene {
+  background-image: url('/public/photos/main-scene.jpg');
+  background-size: cover;
+  background-position: bottom;
+  bottom: 0;
+  right: 0;
+  z-index: 0;
+}
+
+.bg-futures {
+  background: radial-gradient(176.79% 98.06% at 10.53% 6.72%, rgba(0, 0, 0, 0.00) 0%, #000 100%), url('/photos/futures-bg.png') lightgray 50% / cover no-repeat;
+  background-size: cover;
+  background-position: top;
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+}
+
+.embla {
+  overflow: hidden;
+  width: 100%;
+}
+
+.embla__container {
+  display: flex;
+}
+
+.embla__slide {
+  position: relative;
+  width: 20em;
+  min-width: 5em; 
+  height: 14em;
+  flex: 0 0 auto;
+}
+
+/* cover animations */
+.fade-in {
+  animation: fade-in 1s ease-out;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: translateX(-20%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
   }
 }
