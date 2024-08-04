@@ -1,5 +1,6 @@
 'use client';
 import { useState, useEffect } from 'react';
+import Image from 'next/image';
 
 export default function Cover() {
   const [message, setMessage] = useState<string | React.ReactNode>('independent media');
@@ -13,7 +14,13 @@ export default function Cover() {
           newMessage = 'student journalists';
         } else if (prevMessage === 'student journalists') {
           newMessage = (
-            <img src="logos/dp-wordmark.svg" alt="DP Logo" className="max-h-14 h-14 w-100 max-w-full object-contain" />
+            <Image
+            src="/logos/dp-wordmark.svg"
+            alt="DP Wordmark"
+            width={480}
+            height={100}
+            className="max-h-14 h-14 w-100 max-w-full object-contain"
+            />
           );
         } else {
           newMessage = 'independent media';
@@ -23,12 +30,12 @@ export default function Cover() {
       });
     }, 3000);
 
-    return () => clearInterval(interval); // Cleanup interval on component unmount
+    return () => clearInterval(interval);
   }, []);
 
   useEffect(() => {
     if (fadeIn) {
-      const timer = setTimeout(() => setFadeIn(false), 1000); // Duration of the fade-in effect
+      const timer = setTimeout(() => setFadeIn(false), 1000);
       return () => clearTimeout(timer);
     }
   }, [fadeIn]);
