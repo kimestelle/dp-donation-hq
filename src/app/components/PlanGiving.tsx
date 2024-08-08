@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 export default function PlanGiving() {
     return (
-        <div className='w-full flex flex-col text-white bg-[#3B0103] p-20 pb-0 justify-center items-center'>
+        <div className='w-full flex flex-col text-white bg-[#3B0103] p-10 md:p-20 pb-0 justify-center items-center'>
             <Image
                 width={2500}
                 height={1500}

@@ -4,7 +4,7 @@ import AnnualDonateButton from "./annual-campaign/AnnualDonateButton"
 
 export default function AnnualCampaign() {
     return (
-        <div className='w-screen flex flex-col p-10'>
+        <div className='w-screen flex flex-col p-5 md:p-10'>
             <DpToday/>
             <YourGiftFunds/>
             <AnnualDonateButton/>
