@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 export default function PlanGiving() {
     return (
-        <div className='w-full flex flex-col text-white bg-[#3B0103] p-10 md:p-20 pb-0 justify-center items-center'>
+        <div className='w-full flex flex-col text-white bg-[#3B0103] p-10 md:p-20 pb-0 md:pb-0 justify-center items-center'>
             <Image
                 width={2500}
                 height={1500}
@@ -17,6 +17,12 @@ export default function PlanGiving() {
                 <p>
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente adipisci aliquam quam nihil quas harum laborum omnis, provident ea ipsum soluta exercitationem quos quisquam illum libero repellat. Consequatur, mollitia culpa!
                 </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente adipisci aliquam quam nihil quas harum laborum omnis, provident ea ipsum soluta exercitationem quos quisquam illum libero repellat. Consequatur, mollitia culpa!
+                </p>
+                <h5 className='dp-red mt-5'>
+                    For further information, please contact Steven Molberger at molberger@thedp.com.
+                </h5>
             </div>
         </div>
     )

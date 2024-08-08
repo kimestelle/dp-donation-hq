@@ -8,7 +8,7 @@ export default function History() {
             <h2 className="absolute w-full text-[1.5em] md:text-[2em] md:px-32 px-10 pt-10 left-1/2 transform -translate-x-1/2 text-center text-gray-300 z-0">The Daily Pennsylvanian is the University of Pennsylvania&apos;s independent student media organization. We cover news about the University of Pennsylvania and from around the Philadelphia metro area.</h2>
             {/* <h5 className='dp-red'>Upholding our 140-Year Legacy of Journalistic Excellence</h5> */}
             <div className='relative w-full h-[100svh] overflow-scroll dp-red z-1'>
-            <ol className='flex flex-col gap-9 bg-gradient-to-b from-transparent via-white to-transparent p-5 pt-80'>
+            <ol className='flex flex-col gap-9 bg-gradient-to-b from-transparent via-white to-transparent p-5 md:px-7 ml-2 md:ml-5 border-l border-gray-800 mt-80'>
                 <li>
                     <h3>1885</h3>
                     <p>

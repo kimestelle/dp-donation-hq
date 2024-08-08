@@ -33,13 +33,13 @@ export default function FuturesSummary() {
             <div className='relative embla h-80 md:h-96 flex-1 z-2 mb-10 md:md-0 overflow-hidden' ref={emblaRef}>
                 <div className="w-full h-80 md:h-96 embla__container">
                     <div className="w-full h-full embla__slide bg-blue-100">
-
+                        Picture 1
                     </div>
                     <div className="w-full h-full embla__slide bg-green-100">
-
+                        Picture 2
                     </div>
                     <div className="w-full h-full embla__slide bg-red-100">
-
+                        Picture 3
                     </div>
                 </div>
             </div>

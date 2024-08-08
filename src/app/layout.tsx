@@ -14,9 +14,8 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 
   const donationPages: DonationPageURLs = {
     annual: "https://www.classy.org/give/506065/#!/donation/checkout",
-    futures: "https://donationpage2.com",
-    pubsoc: "https://donationpage3.com",
-    street: "https://donationpage4.com",
+    futures: "https://host.nxt.blackbaud.com/donor-form/?svcid=tcs&formId=ab9c0c00-775d-4569-bd3d-d50a1cfce308&envid=p-BbGbRoTNyEqlmBrbIkE5nw&zone=usa",
+    pubsoc: "https://www.classy.org/give/558150/?utm_source=Newsletters&utm_campaign=bf09d15d3e-EMAIL_CAMPAIGN_2024_02_06_03_20&utm_medium=email&utm_term=0_-bf09d15d3e-%5BLIST_EMAIL_ID%5D#!/donation/checkout",
   };
 
   return (
