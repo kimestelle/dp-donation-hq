@@ -4,7 +4,6 @@ export interface DonationPageURLs {
   annual: string;
   futures: string;
   pubsoc: string;
-  street: string;
 }
 
 interface DonationPageProps {
