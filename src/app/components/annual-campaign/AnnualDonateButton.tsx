@@ -1,7 +1,7 @@
 export default function AnnualDonateButton() {
     return (
         <div className='w-full flex flex-col md:flex-row gap-5 items-center md:items-start'>
-            <button className='flex-1 metallic-button'>
+            <button className='md:flex-1 w-full metallic-button'>
                 <h5>Give Here!</h5>
             </button>
             <div className='w-full flex-[3_3_0%] flex flex-row items-start gap-3 bg-gray-100 rounded-md p-5'>
