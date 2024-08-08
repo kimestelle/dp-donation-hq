@@ -10,6 +10,7 @@
   .bg-publications {
     background-image: url('/photos/publications.png');
     background-size: cover;
+    background-position: center;
   }
   .bg-students {
     background-image: url('/photos/students.png');
