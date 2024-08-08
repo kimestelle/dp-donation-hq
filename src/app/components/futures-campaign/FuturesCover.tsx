@@ -5,13 +5,13 @@ export default function FuturesCover() {
             <h1 className='font-medium'>
                 Funding the
             </h1>
-            <h1 className='-mt-20 text-[12em]'>
+            <h1 className='md:-mt-20 md:text-[12em] text-[6em]'>
                 Future
             </h1>
             <p className='text-white text-lg'>
                 The DP&apos;s new home at
             </p>
-            <div className="text-white-outline mt-5">
+            <div className="text-white-outline mt-5 md:text-[4em]">
                 3721 Chestnut st.
             </div>
         </div>

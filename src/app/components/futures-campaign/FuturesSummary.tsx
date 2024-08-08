@@ -8,7 +8,7 @@ export default function FuturesSummary() {
 
     return (
     <>
-        <div className='w-full flex flex-col px-[10em] pb-10 text-white items-center'>
+        <div className='w-full flex flex-col lg:px-[20em] px-10 pb-10 text-white items-center'>
             <p className='text-white text-center'>
                 We are launching the Futures Capital Campaign to renovate the permanent home for our publication. This critical initiative will mark our final step toward independence. 
                 <br></br>
@@ -16,8 +16,8 @@ export default function FuturesSummary() {
                 We plan to open this new facility within the next 2-3 years. Your contribution will ensure the Daily Pennsylvanian&apos;s continued success and independence for generations to come.
             </p>
         </div>
-        <div className='relative w-full flex flex-row mb-20'>
-            <div className='flex-1 futures-banner text-white p-5 mt-20 mb-20 z-5'>
+        <div className='relative w-full flex md:flex-row flex-col md:mb-20 z-1'>
+            <div className='relative flex-1 futures-banner text-white p-5 mt-20 mb-20 z-5'>
                 <ul>
                     <li>
                     Improved spaces and equipment
@@ -30,7 +30,7 @@ export default function FuturesSummary() {
                     </li>
                 </ul>
             </div>
-            <div className='embla flex-1 bg-red-500 -ml-10 z-2' ref={emblaRef}>
+            <div className='relative embla flex-1 bg-red-500 -ml-10 z-2' ref={emblaRef}>
                 <div className="w-full h-full embla__container">
                     <div className="w-full h-full embla__slide bg-blue-100">
 

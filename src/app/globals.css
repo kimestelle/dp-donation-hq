@@ -2,6 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities {
+  .bg-newspapers {
+    background-image: url('/photos/newspapers.png');
+    background-size: cover;
+  }
+  .bg-publications {
+    background-image: url('/photos/publications.png');
+    background-size: cover;
+  }
+  .bg-students {
+    background-image: url('/photos/students.png');
+    background-size: cover;
+  }
+}
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-rgb: white;
@@ -18,20 +33,20 @@ div {
 h1 {
   font-family: "nocturne-serif", serif;
   font-weight: 800;
-  font-size: 3em;
+  font-size: 2em;
 }
 
 h2 {
   font-family: "nocturne-serif", serif;
   font-weight: 400;
   font-style: italic;
-  font-size: 3em;
+  font-size: 2em;
 }
 
 h3 {
   font-family: "nocturne-serif", serif;
   font-weight: 700;
-  font-size: 1.2em;
+  font-size: 1em;
 }
 
 h5 {
@@ -44,8 +59,22 @@ h5 {
 p {
   font-family: "nocturne-serif", serif;
   font-weight: 400;
-  font-size: 1em;
+  font-size: 0.8em;
   color: rgb(36, 36, 36);
+}
+
+@media only screen and (min-width: 600px) {
+  p {
+    font-size: 1em;
+  }
+}
+
+li {
+  font-family: "nocturne-serif", serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 1em;
+  list-style-type: disc;
 }
 
 button {
@@ -73,7 +102,7 @@ button:active {
   -webkit-text-stroke-color: #FFF;
   -webkit-text-fill-color: transparent;
   font-family: "Nocturne Serif";
-  font-size: 4em;
+  font-size: 2em;
   font-style: normal;
   font-weight: 600;
   font-variant: all-small-caps;
@@ -93,15 +122,6 @@ button:active {
   background-size: contain;
   background-repeat: no-repeat;
   background-position-x: 100%;
-}
-
-.futures-banner li {
-  font-family: "nocturne-serif", serif;
-  font-weight: 400;
-  font-style: italic;
-  font-size: 1.5em;
-  line-height: 200%;
-  list-style-type: disc;
 }
 
 .dp-red {
@@ -135,6 +155,41 @@ button:active {
   background-size: cover;
   background-position: top;
 }
+
+.metallic-button {
+  position: relative;
+  display: inline-block;
+  background: linear-gradient(145deg, #aa1e22, #791518);
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.metallic-button:hover {
+  transform: scale(1.05);
+}
+
+.metallic-button::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(30deg, transparent, rgba(255, 255, 255, 0.5), transparent);
+  transform: rotate(30deg);
+  animation: shine 2s infinite;
+}
+
+@keyframes shine {
+  0% {
+      transform: rotate(30deg) translateX(-200%);
+  }
+  100% {
+      transform: rotate(30deg) translateX(200%);
+  }
+}
+
 
 @layer utilities {
   .text-balance {

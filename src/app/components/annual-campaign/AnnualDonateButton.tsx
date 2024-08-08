@@ -1,15 +1,20 @@
 export default function AnnualDonateButton() {
     return (
-        <div className='w-full flex flex-col gap-5 items-center'>
-            <button>
-                Donate to the Annual Campaign!
+        <div className='w-full flex flex-col md:flex-row gap-5 items-center md:items-start'>
+            <button className='flex-1 metallic-button'>
+                <h5>Give Here!</h5>
             </button>
-            <p>
-                Step up your game and join the Publishers Society!
-            </p>
-            <button className='bg-blue-900'>
-                Join the Publishers Society
-            </button>   
+            <div className='w-full flex-[3_3_0%] flex flex-row items-start gap-3 bg-gray-100 rounded-md p-5'>
+                <img src='logos/pubsoc-color.png' className='w-12 md:w-40'/>
+                <div className='flex flex-col gap-2'>
+                    <h5 className='font-bold underline'>
+                        Join the Publishers Society &gt;
+                    </h5>   
+                    <p>
+                        Step up your game and join the Publishers Society! Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore itaque magni assumenda accusantium eaque id, temporibus eum! Nemo sapiente repudiandae libero ducimus consequatur accusamus exercitationem, quae tenetur commodi delectus adipisci?
+                    </p>
+                </div>
+            </div>
         </div>
     )
 }
