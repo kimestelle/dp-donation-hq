@@ -16,6 +16,7 @@ const Navbar: React.FC<NavbarProps> = ({ setCurrentPage }) => {
         <Image
           width={112}
           height={112}
+          sizes="(max-width: 768px) 32px, 112px"
           src="/logos/140-logo.svg"
           alt="140 logo"
           className="w-8 h-8"
@@ -27,6 +28,7 @@ const Navbar: React.FC<NavbarProps> = ({ setCurrentPage }) => {
           <Image
             width={120}
             height={120}
+            sizes="(max-width: 768px) 40px, 120px"
             src="/logos/annual-logo.svg"
             alt="Annual logo"
             className="w-10 h-10"
@@ -36,6 +38,7 @@ const Navbar: React.FC<NavbarProps> = ({ setCurrentPage }) => {
           <Image
             width={120}
             height={120}
+            sizes="(max-width: 768px) 40px, 120px"
             src="/logos/futures-logo.svg"
             alt="Futures logo"
             className="w-10 h-10"
@@ -45,6 +48,7 @@ const Navbar: React.FC<NavbarProps> = ({ setCurrentPage }) => {
           <Image
             width={120}
             height={120}
+            sizes="(max-width: 768px) 40px, 120px"
             src="/logos/pubsoc-logo.svg"
             alt="Pubsoc logo"
             className="w-10 h-10"
