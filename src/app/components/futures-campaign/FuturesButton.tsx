@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 export default function FuturesButton() {
     return (
-        <div className='w-full flex flex-col md:flex-row mb-20'>
+        <div className='w-full flex flex-col mb-20 justify-center items-center gap-3'>
             <Image
             width={800}
             height={100}
@@ -11,7 +11,7 @@ export default function FuturesButton() {
             alt="Funding Progress"
             className="h-100"
             />
-            <button>
+            <button className='metallic-button'>
                 Donate to the Futures Campaign!
             </button>
         </div>

@@ -17,7 +17,7 @@ export default function FuturesSummary() {
             </p>
         </div>
         <div className='relative w-full flex md:flex-row flex-col md:mb-20 z-1'>
-            <div className='relative flex-1 futures-banner text-white p-5 mt-20 mb-20 z-5'>
+            <div className='relative flex-1 futures-banner text-white m-5 mt-20 md:mb-20 z-5'>
                 <ul>
                     <li>
                     Improved spaces and equipment
@@ -30,8 +30,8 @@ export default function FuturesSummary() {
                     </li>
                 </ul>
             </div>
-            <div className='relative embla flex-1 bg-red-500 -ml-10 z-2' ref={emblaRef}>
-                <div className="w-full h-full embla__container">
+            <div className='relative embla md:h-full h-80 flex-1 md:-ml-10 z-2 md:p-0 p-5 overflow-hidden' ref={emblaRef}>
+                <div className="w-full md:h-full h-80 embla__container gap-5">
                     <div className="w-full h-full embla__slide bg-blue-100">
 
                     </div>

@@ -4,10 +4,10 @@ export default function AnnualDonateButton() {
             <button className='md:flex-1 w-full metallic-button'>
                 <h5>Give Here!</h5>
             </button>
-            <div className='w-full flex-[3_3_0%] flex flex-row items-start gap-3 bg-gray-100 rounded-md p-5'>
+            <div className='w-full flex-[3_3_0%] flex flex-row items-start gap-3 bg-white rounded-md p-5'>
                 <img src='logos/pubsoc-color.png' className='w-12 md:w-40'/>
                 <div className='flex flex-col gap-2'>
-                    <h5 className='font-bold underline'>
+                    <h5 className='font-bold'>
                         Join the Publishers Society &gt;
                     </h5>   
                     <p>
