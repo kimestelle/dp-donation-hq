@@ -7,27 +7,42 @@ import TestimonyBlock, { TestimonyProps } from './TestimonyBlock';
 
 const testimonies: TestimonyProps[] = [
   {
-    name: 'Estelle Kim',
+    name: 'Person 1',
     testimony: 'I had the time of my life at the DP! So thankful for the experience.',
     year: '140th Board, c/o 2027'
   },
   {
-    name: 'Estelle Kim',
+    name: 'Person 2',
     testimony: 'I had the time of my life at the DP! So thankful for the experience.',
     year: '140th Board, c/o 2027'
   },
   {
-    name: 'Estelle Kim',
+    name: 'Person 3',
     testimony: 'I had the time of my life at the DP! So thankful for the experience.',
     year: '140th Board, c/o 2027'
   },
   {
-    name: 'Estelle Kim',
+    name: 'Person 4',
     testimony: 'I had the time of my life at the DP! So thankful for the experience.',
     year: '140th Board, c/o 2027'
   },
   {
-    name: 'Estelle Kim',
+    name: 'Person 5',
+    testimony: 'I had the time of my life at the DP! So thankful for the experience.',
+    year: '140th Board, c/o 2027'
+  },
+  {
+    name: 'Person 6',
+    testimony: 'I had the time of my life at the DP! So thankful for the experience.',
+    year: '140th Board, c/o 2027'
+  },
+  {
+    name: 'Person 7',
+    testimony: 'I had the time of my life at the DP! So thankful for the experience.',
+    year: '140th Board, c/o 2027'
+  },
+  {
+    name: 'Person 8',
     testimony: 'I had the time of my life at the DP! So thankful for the experience.',
     year: '140th Board, c/o 2027'
   }
