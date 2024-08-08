@@ -3,6 +3,12 @@
 @tailwind utilities;
 
 @layer utilities {
+  .bg-main-scene {
+    background: radial-gradient(176.79% 98.06% at 10.53% 6.72%, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%), url('/photos/main-scene.jpg') lightgray 50% / cover no-repeat;
+    background-size: cover;
+    background-position: top;
+  }
+
   .bg-newspapers {
     background-image: url('/photos/newspapers.png');
     background-size: cover;
@@ -135,14 +141,6 @@ button:active {
 
 .bg-dp-blue {
   background-color: #0d4882;
-}
-
-.bg-main-scene {
-  background: radial-gradient(176.79% 98.06% at 10.53% 6.72%, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%), url('/photos/main-scene.jpg') lightgray 50% / cover no-repeat;
-  background-size: cover;
-  background-position: bottom;
-  bottom: 0;
-  right: 0;
 }
 
 .bg-futures {
