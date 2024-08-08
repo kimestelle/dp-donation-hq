@@ -1,7 +1,7 @@
 export default function YourGiftFunds() {
     return (
         <>
-            <h2>Your gift funds:</h2>
+            <h2 className='mt-20'>Your gift funds:</h2>
             
             <div className='w-full flex flex-col mb-10'>
                 <div className='flex-1 flex flex-col gap-2 p-4 px-6 border-b md:border-b-0 border-gray-300'>
