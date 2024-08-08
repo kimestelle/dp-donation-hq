@@ -41,7 +41,7 @@ export default function Cover() {
   }, [fadeIn]);
 
   return (
-    <div className="relative h-screen flex flex-col p-10 bg-main-scene">
+    <div className="relative h-screen flex flex-col p-10 md:pl-20 bg-main-scene">
       <div className='content-wrapper sm:text-[2em]'>
         <h1>Your</h1>
         <h1 className="dp-red leading-tight sm:text-[2em]">philanthropic headquarters</h1>
