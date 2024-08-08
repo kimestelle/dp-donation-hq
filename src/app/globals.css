@@ -4,11 +4,25 @@
 
 @layer utilities {
   .bg-main-scene {
-    background: radial-gradient(176.79% 98.06% at 10.53% 6.72%, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%), url('/photos/main-scene.jpg') lightgray 50% / cover no-repeat;
+    position: relative; 
+    background-image: url('/photos/main-scene.jpg');
     background-size: cover;
     background-position: top;
+    z-index: 1;
   }
-
+  
+  .bg-main-scene::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at top right, transparent, white 80%);
+    z-index: 2;
+    pointer-events: none;
+  }
+  
   .bg-newspapers {
     background-image: url('/photos/newspapers.png');
     background-size: cover;
@@ -76,6 +90,11 @@ p {
   }
 }
 
+ol li {
+  list-style-type: none;
+  list-style: none;
+}
+
 li {
   font-family: "nocturne-serif", serif;
   font-weight: 400;
@@ -101,6 +120,11 @@ button {
 
 button:active {
   box-shadow: inset 2px 3px 3px rgba(0, 0, 0, 0.3);
+}
+
+.content-wrapper {
+  position: relative;
+  z-index: 3;
 }
 
 .text-white-outline {
@@ -140,7 +164,7 @@ button:active {
 }
 
 .bg-dp-blue {
-  background-color: #0d4882;
+  background-color: #012950;
 }
 
 .bg-futures {
