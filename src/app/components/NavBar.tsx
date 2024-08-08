@@ -15,7 +15,7 @@ const Navbar: React.FC<NavbarProps> = ({ setCurrentPage }) => {
       <div className="cursor-pointer" onClick={() => setCurrentPage('main')}>
         <Image
           width={112}
-          height={32}
+          height={112}
           src="/logos/140-logo.svg"
           alt="140 logo"
           className="w-8 h-8"
@@ -26,7 +26,7 @@ const Navbar: React.FC<NavbarProps> = ({ setCurrentPage }) => {
         <div className="cursor-pointer" onClick={() => setCurrentPage('annual')}>
           <Image
             width={120}
-            height={40}
+            height={120}
             src="/logos/annual-logo.svg"
             alt="Annual logo"
             className="w-10 h-10"
@@ -35,7 +35,7 @@ const Navbar: React.FC<NavbarProps> = ({ setCurrentPage }) => {
         <div className="cursor-pointer" onClick={() => setCurrentPage('futures')}>
           <Image
             width={120}
-            height={40}
+            height={120}
             src="/logos/futures-logo.svg"
             alt="Futures logo"
             className="w-10 h-10"
@@ -44,7 +44,7 @@ const Navbar: React.FC<NavbarProps> = ({ setCurrentPage }) => {
         <div className="cursor-pointer" onClick={() => setCurrentPage('pubsoc')}>
           <Image
             width={120}
-            height={40}
+            height={120}
             src="/logos/pubsoc-logo.svg"
             alt="Pubsoc logo"
             className="w-10 h-10"
