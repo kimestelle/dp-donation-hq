@@ -1,7 +1,7 @@
 export default function FuturesCover() {
 
     return (
-        <div className='w-full flex flex-col p-10 bg-futures pt-[60em] pb-[5em] text-white items-end'>
+        <div className='w-full flex flex-col p-10 bg-futures pt-[60em] pb-[5em] md:pl-20 text-white items-end'>
             <h1 className='font-medium -mb-10 md:-mb-0'>
                 Funding the
             </h1>
