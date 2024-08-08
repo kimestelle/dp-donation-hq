@@ -57,7 +57,7 @@ export default function DpToday() {
                     </div>
                 </div>
 
-                <h3 className='text-center md:px-10 py-5 bg-black'>
+                <h3 className='text-center md:px-10 px-5 py-5 bg-black'>
                     The Annual Advances Campaign is an ongoing fund that supports the core day-to-day operations of the newsroom. 
                     Last year, alumni and friends raised over $250,000, with consistent 200% yearly increases since 2020.
                     Your support enables us to stay reliable and independent.
